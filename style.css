@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  color:#303D5A;
+}
+
+#body {
+  width: auto;
+  height:auto; 
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-image: url("frutiger2.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height:75px;
+  background-color: #5A7863;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  
+  padding: 0;
+}
+
+.navbar a {
+ margin-right: 2em;
+  margin-left: 2em; 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #04ff00;
+}
+
+
+
+
+
+/* =========================
+   PAGE LAYOUT
+========================= */
+.home-card {
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+/* =========================
+   CARDS
+========================= */
+.resource-card {
+  color: #222748;
+  font-family: Georgia, Garamond ;
+  background-image: url("flower.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  margin: 2em auto;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   BIO SECTION
+========================= */
+.bio { 
+  color:#222748 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.bio-pic img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.bio-text h1 {
+  margin-bottom: 0.2em;
+}
+.pic-name{
+  /*border: 3px solid #5555aa;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 650px;
+  height: 150px;
+  margin-bottom: 8px;
+
+}
+.bio-text h4 {
+  margin-top: 0;
+  font-weight: normal;
+  color:#222748;
+}
+
+/* =========================
+   PROJECT LAYOUT
+========================= */
+.project {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
+}
+
+
+.project iframe {
+  flex: 2;
+  min-width: 320px;
+  height: 450px;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.project img {
+  flex: 2;
+  min-width: 320px;
+  min-height: 200px;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.reflection {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 1em;
+  border-radius: 8px;
+  color:#7132CA
+}
+
+.reflection h3 {
+  margin-top: 0;
+  color: #222748;
+}
+
+.reflection p {
+  font-size: 0.95em;
+  color: #222748;
+}
+
+/* =========================
+   LINKS / ICONS
+========================= */
+.skill-images {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.picture {
+  transition: transform 0.2s ease;
+}
+
+.picture:hover {
+  transform: scale(1.05);
+}
+
+.link-pic {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  color: #cccccc;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project iframe {
+    width: 100%;
+    min-width: 0;
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .navbar-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
